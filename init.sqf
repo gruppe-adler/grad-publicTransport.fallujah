@@ -1,0 +1,1 @@
+[] execVM "grad_publicTransport\init.sqf";

@@ -6,10 +6,9 @@ params ["_waypoint"];
 _waypoint setWaypointStatements [
 "true", 
 "
+doStop this;
 [this] spawn grad_publicTransport_fnc_waitForPassengers;
 
 "];
 
-_waypoint setWaypointTimeout [0,0.25,0.5];
-
-_waypoint setWaypointSpeed "NORMAL"; // todo adjust to behaviour
+_waypoint setWaypointSpeed "LIMITED"; // todo adjust to behaviour

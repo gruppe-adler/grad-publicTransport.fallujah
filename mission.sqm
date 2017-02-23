@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5038.3955,31.990007,2298.4297};
-		dir[]={0.016381741,-0.38768303,0.92164898};
-		up[]={0.00688976,0.92179269,0.38762328};
-		aside[]={0.99984479,1.4797479e-009,-0.0177716};
+		pos[]={4815.6519,31.99073,3593.6816};
+		dir[]={-0.66629088,-0.25194669,0.70185941};
+		up[]={-0.17346866,0.96773642,0.18272929};
+		aside[]={0.72525334,1.5505066e-007,0.68849754};
 	};
 };
 binarizationWanted=0;
@@ -114,21 +114,67 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5061.418,6.9914465,2359.6321};
-						angles[]={0,2.6692157,0};
+						position[]={4786.4927,6.9921694,3616.4905};
+						angles[]={0,2.7552099,0};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
+						init="this linkitem ""itemgps"";";
 						isPlayer=1;
 					};
 					id=1;
 					type="LOP_Tak_Civ_Man_12";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
 			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1;
+						item1=8;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=0;
+						};
+					};
+				};
 			};
 			id=0;
 		};
@@ -137,8 +183,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5029.2109,8.8797941,2326.1235};
-				angles[]={0,6.265481,0};
+				position[]={4786.4927,8.880517,3616.4404};
+				angles[]={0,2.7552099,0};
 			};
 			side="Civilian";
 			flags=6;
@@ -160,8 +206,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5029.2109,6.9914465,2326.1736};
-						angles[]={0,6.265481,0};
+						position[]={4786.4927,6.9921694,3616.4905};
+						angles[]={0,2.7552099,0};
 					};
 					side="Civilian";
 					flags=7;

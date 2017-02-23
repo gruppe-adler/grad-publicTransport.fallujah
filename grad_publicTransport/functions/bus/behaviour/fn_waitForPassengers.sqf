@@ -1,7 +1,7 @@
 params ["_driver"];
 
 _bus = vehicle _driver;
-_waitingTime = 10 + (random 2);
+_waitingTime = 4 + (random 2);
 
 [_bus, ['doors_1', 'doors_2', 'doors_3']] call grad_publicTransport_fnc_openDoors;
 
@@ -25,3 +25,4 @@ sleep 0.5;
 
 // next waypoint for this line
 [_driver] call grad_publicTransport_fnc_waypointGetNext;
+units (group _driver) doFollow leader (group _driver);

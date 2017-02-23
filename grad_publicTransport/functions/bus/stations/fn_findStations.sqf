@@ -1,4 +1,4 @@
-private ["_mapCenter", "_stationMapObjects", "_stationsArray"];
+/* private ["_mapCenter", "_stationMapObjects", "_stationsArray"];
 
 _mapCenter = getArray(configFile >> "CfgWorlds" >> worldName >> "centerPosition");
 
@@ -18,3 +18,5 @@ _stationsPosArray = [];
 } foreach _stationMapObjects;
 
 _sortedStationsPosArray = [_stationsPosArray] call GRAD_publicTransport_fnc_sortByDistance;
+
+*/

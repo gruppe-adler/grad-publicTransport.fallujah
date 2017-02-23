@@ -5,30 +5,37 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=12;
+		nextID=17;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={5472.1094,11.252889,2392.7688};
-		dir[]={-0.088900626,-0.54705369,0.83240122};
-		up[]={-0.058094364,0.83708829,0.54396236};
-		aside[]={0.99437636,5.0514063e-007,0.10619798};
+		pos[]={5038.3955,31.990007,2298.4297};
+		dir[]={0.016381741,-0.38768303,0.92164898};
+		up[]={0.00688976,0.92179269,0.38762328};
+		aside[]={0.99984479,1.4797479e-009,-0.0177716};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"po_factions_me",
-	"rds_A2_Civilians"
+	"rds_A2_Civilians",
+	"A3_Ui_F",
+	"A3_Characters_F",
+	"CUP_Wheeled_SUV"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=5;
 		class Item0
 		{
 			className="po_factions_me";
@@ -41,6 +48,25 @@ class AddonsMetaData
 			name="RDS Civilian Pack Cars";
 			author="reyhard";
 			url="https://forums.bistudio.com/topic/170165-rds-a2-civilian-pack/";
+		};
+		class Item2
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="CUP_Wheeled_SUV";
+			name="CUP_Wheeled_SUV";
 		};
 	};
 };
@@ -75,7 +101,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=7;
 		class Item0
 		{
 			dataType="Group";
@@ -88,7 +114,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5469.0283,6.9914408,2395.4199};
+						position[]={5061.418,6.9914465,2359.6321};
 						angles[]={0,2.6692157,0};
 					};
 					side="Civilian";
@@ -111,8 +137,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5472.9287,8.8797884,2392.3481};
-				angles[]={0,4.6697931,0};
+				position[]={5029.2109,8.8797941,2326.1235};
+				angles[]={0,6.265481,0};
 			};
 			side="Civilian";
 			flags=6;
@@ -134,8 +160,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5472.9287,6.9914408,2392.3982};
-						angles[]={0,4.6697931,0};
+						position[]={5029.2109,6.9914465,2326.1736};
+						angles[]={0,6.265481,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -171,6 +197,93 @@ class Mission
 				};
 			};
 			id=10;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={5027.2646,2.1565774e+021,2362.3359};
+			name="start";
+			type="mil_start";
+			id=12;
+			atlOffset=2.1565774e+021;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={4796.4429,2.9632136e+031,3593.3086};
+			name="end";
+			type="mil_end";
+			id=13;
+			atlOffset=2.9632136e+031;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5334.2734,6.9914947,1899.826};
+						angles[]={0,5.7941504,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=16;
+					type="C_man_hunter_1_F";
+					atlOffset=5.3882599e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=16;
+						item1=15;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=14;
+			atlOffset=5.3405762e-005;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5334.2847,8.0263863,1899.5326};
+				angles[]={0,5.7941504,0};
+			};
+			side="Civilian";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=15;
+			type="CUP_C_SUV_TK";
+			atlOffset=5.3405762e-005;
 		};
 	};
 };

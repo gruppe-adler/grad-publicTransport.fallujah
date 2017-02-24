@@ -35,6 +35,7 @@ class GRAD_publicTransport {
         file = grad_publicTransport\functions\bus\stations;
         
         class assignRoute {};
+        class attachSigns {};
         class createStations {};
         class findStations {};
         class getNextStation {};

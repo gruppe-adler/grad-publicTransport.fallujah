@@ -1,6 +1,6 @@
 class GRAD_publicTransport {
 
-    class behaviour {
+    class bus_behaviour {
         file = grad_publicTransport\functions\bus\behaviour;
         
         class addBehaviour {};
@@ -10,13 +10,13 @@ class GRAD_publicTransport {
         class waitForPassengers {};
     };
 
-    class debug {
+    class bus_debug {
         file = grad_publicTransport\functions\bus\debug;
         
         class createDebugMarker {};
     };
 
-    class pathfinding_by_coding {
+    class bus_pathfinding_by_coding {
         file = grad_publicTransport\functions\bus\pathfinding_by_coding;
         
         class addVectors {};
@@ -31,7 +31,7 @@ class GRAD_publicTransport {
         class h {};
     };
 
-    class stations {
+    class bus_stations {
         file = grad_publicTransport\functions\bus\stations;
         
         class assignRoute {};
@@ -45,5 +45,22 @@ class GRAD_publicTransport {
         class waypointGetNext {};
         class waypointSetStatements {};
         class waypointsCreate {};
+    };
+
+      class taxi_movement {
+        file = grad_publicTransport\functions\taxi\movement;
+     
+    };
+
+    class taxi_spawn {
+        file = grad_publicTransport\functions\taxi\movement;
+
+        class taxiSpawn {};
+     
+    };
+
+    class taxi_ui {
+        file = grad_publicTransport\functions\taxi\movement;
+     
     };
 };

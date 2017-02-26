@@ -8,11 +8,10 @@ _pos = (getpos (_group select (count _group - 1))); // get leader of group
 
 _poi = [_pos] call grad_civstatic_fnc_getNextPOI;
 
-_movePosition = [_poi, [2,2.5], random 360] call SHK_POS;
-
 _speed = selectRandom ["SLOW", "NORMAL", "FAST"];
 
 {
+	_movePosition = [_poi, [2,2.5], random 360] call SHK_POS;
 	_x moveTo _movePosition;
 	_x forceSpeed (_x getSpeed _speed);
 } forEach _group;

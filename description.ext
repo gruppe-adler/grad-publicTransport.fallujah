@@ -2,4 +2,5 @@ enableDebugConsole = 1;
 
 class cfgFunctions {
 	#include "grad_publicTransport\cfgFunctions.hpp"
+	#include "grad_civstatic\cfgFunctions.hpp"
 };

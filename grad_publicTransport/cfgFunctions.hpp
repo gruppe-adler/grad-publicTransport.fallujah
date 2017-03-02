@@ -10,12 +10,6 @@ class GRAD_publicTransport {
         class waitForPassengers {};
     };
 
-    class bus_debug {
-        file = grad_publicTransport\functions\bus\debug;
-        
-        class createDebugMarker {};
-    };
-
     class bus_pathfinding_by_coding {
         file = grad_publicTransport\functions\bus\pathfinding_by_coding;
         
@@ -49,18 +43,37 @@ class GRAD_publicTransport {
 
       class taxi_movement {
         file = grad_publicTransport\functions\taxi\movement;
-     
+        
+        class setTaxiWaypoint {};
+        class startTaxameter {};
+        class stopTaxameter {};
     };
 
     class taxi_spawn {
-        file = grad_publicTransport\functions\taxi\movement;
+        file = grad_publicTransport\functions\taxi\spawn;
 
+        class addGetInEH {};
+        class findSpawnPosition {};
         class taxiSpawn {};
-     
+    
     };
 
     class taxi_ui {
-        file = grad_publicTransport\functions\taxi\movement;
+        file = grad_publicTransport\functions\taxi\ui;
+
+        class addACEInteraction {};
+        class openMap {};
+        class closeMap {};
+        class taxiDialogOpen {};
+        class taxiDialogClose {};
      
+    };
+
+    class common {
+        file = grad_publicTransport\functions\common;
+
+        class dressDriver {};
+        class createDebugMarker {};
+        class removeDangerousPlants {};
     };
 };

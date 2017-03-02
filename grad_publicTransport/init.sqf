@@ -4,12 +4,23 @@
 
 */
 
-[] execVM "grad_publicTransport\functions\bus\pathfinding_by_coding\init.sqf";
+// _signline1 = "grad_publicTransport\data\sign_line_101.paa";
+
+// [ikarus, _signline1] call grad_publicTransport_fnc_attachSigns;
 
 
-_signline1 = "grad_publicTransport\data\sign_line_101.paa";
 
-[ikarus, _signline1] call grad_publicTransport_fnc_attachSigns;
+if (hasInterface) then {
+	call grad_publicTransport_fnc_addACEInteraction;
+};
+
+if (isServer) then {
+	[] execVM "grad_publicTransport\functions\taxi\init.sqf";
+	call grad_publicTransport_fnc_removeDangerousPlants;
+};
+
+
+
 
 
 /*

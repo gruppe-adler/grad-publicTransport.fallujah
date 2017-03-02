@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3494;
+		nextID=3506;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7378.8818,14.30377,5339.7007};
-		dir[]={-0.17130305,-0.41172594,0.89514655};
-		up[]={-0.07739161,0.91129225,0.40440851};
-		aside[]={0.98224372,-2.9089279e-007,0.18797247};
+		pos[]={5110.3916,100.38896,4203.3618};
+		dir[]={-0.29440627,-0.24220362,-0.92460787};
+		up[]={-0.073504664,0.97020489,-0.23084867};
+		aside[]={-0.95295715,-8.8053639e-008,0.30343542};
 	};
 };
 binarizationWanted=0;
@@ -29,13 +29,14 @@ addons[]=
 	"po_factions_me",
 	"A3_Ui_F",
 	"rds_a2port_cman",
-	"rhs_c_troops"
+	"rhs_c_troops",
+	"A3_Characters_F_Exp_Civil"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			className="rds_A2_Civilians";
@@ -69,6 +70,13 @@ class AddonsMetaData
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
+		};
+		class Item5
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 	};
 };
@@ -116,7 +124,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Object";
@@ -361,7 +369,7 @@ class Mission
 				position[]={7309.0195,8.4950504,5336.8652};
 				angles[]={0,4.7324333,0};
 			};
-			side="East";
+			side="Civilian";
 			flags=6;
 			class Attributes
 			{
@@ -475,7 +483,8 @@ class Mission
 						item1=25;
 						class CustomData
 						{
-							role=1;
+							role=3;
+							cargoIndex=0;
 						};
 					};
 				};
@@ -490,6 +499,55 @@ class Mission
 			type="mil_start";
 			id=3489;
 			atlOffset=4.5157311e+035;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7309.0195,7.0014391,5336.915};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=3495;
+					type="C_Man_casual_2_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=3495;
+						item1=25;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=3494;
 		};
 	};
 };

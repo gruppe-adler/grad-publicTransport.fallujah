@@ -21,7 +21,9 @@ diag_log format ["%1 moving to %2", _group, _poi];
 
 
 /* DEBUG MARKER */
-{ _x setMarkerAlpha 0; } forEach allMapMarkers;
+/*
+	{ _x setMarkerAlpha 0; } forEach allMapMarkers;
 
-[_pos, "colorBlue"] call grad_civstatic_fnc_createDebugMarker;
-[_movePosition, "colorOrange"] call grad_civstatic_fnc_createDebugMarker;
+	[_pos, "colorBlue"] call grad_civstatic_fnc_createDebugMarker;
+	[_movePosition, "colorOrange"] call grad_civstatic_fnc_createDebugMarker;
+*/

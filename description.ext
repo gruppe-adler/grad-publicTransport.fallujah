@@ -4,3 +4,10 @@ class cfgFunctions {
 	#include "grad_publicTransport\cfgFunctions.hpp"
 	#include "grad_civstatic\cfgFunctions.hpp"
 };
+
+#include "grad_publicTransport\ui\defines.hpp"
+#include "grad_publicTransport\ui\taxiDialog.hpp"
+
+class RscTitles {
+	#include "grad_publicTransport\ui\taxameterDisplay.hpp"
+};

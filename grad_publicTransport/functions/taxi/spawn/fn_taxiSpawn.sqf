@@ -16,5 +16,10 @@ _vehiclesGroup = _result select 2;
 	[_x] call grad_publicTransport_fnc_dressDriver;
 } forEach _vehiclesCrew;
 
-clearItemCargoGlobal _veh;
-_veh setObjectTextureGlobal [0, "grad_publicTransport\data\volha_taxi_eciv_co.paa"];
+clearItemCargoGlobal _vehicle;
+_vehicle setObjectTextureGlobal [0, "grad_publicTransport\data\volha_taxi_eciv_co.paa"];
+
+_vehicle setVariable ["grad_publicTransport_assignedDriver", _vehiclesCrew select 0];
+_vehicle setVariable ["grad_publicTransport_isTaxi", true, true];
+
+_vehicle

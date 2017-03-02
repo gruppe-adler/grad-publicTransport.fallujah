@@ -61,6 +61,6 @@ while {_poi distance2d _pos < 50} do {
 	_count = _count + 1;
 };
 
-hintsilent format ["found move position in %1 cycles", _count];
+// hintsilent format ["found move position in %1 cycles", _count];
 
 _poi

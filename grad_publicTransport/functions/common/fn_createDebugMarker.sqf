@@ -1,4 +1,4 @@
-params ["_pos", ["_color", "colorRed"], "_number"];
+params ["_pos", ["_color", "colorRed"], ["_number", -1]];
 
 _marker = createMarker [format["%1", toString _pos],_pos];
 
@@ -11,5 +11,7 @@ _marker setMarkerType "hd_dot";
 
 _marker setMarkerAlpha 1;
 _marker setMarkerColor _color;
-_marker setMarkerText (str _number);
 
+if (_number > -1) then {
+	_marker setMarkerText (str _number);
+};

@@ -14,7 +14,7 @@ _agent setVariable ["grad_civstatic_currentAnimationType", "TALK"];
 
 // DEBUG
 
-[_pos] call grad_civstatic_fnc_createDebugMarker;
+// [_pos] call grad_civstatic_fnc_createDebugMarker;
 
 [_agent, ""] call grad_civstatic_fnc_animateAI;
 // [_agent] call grad_civstatic_fnc_sitDown;

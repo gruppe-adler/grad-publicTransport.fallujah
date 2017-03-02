@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3506;
+		nextID=3565;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5110.3916,100.38896,4203.3618};
-		dir[]={-0.29440627,-0.24220362,-0.92460787};
-		up[]={-0.073504664,0.97020489,-0.23084867};
-		aside[]={-0.95295715,-8.8053639e-008,0.30343542};
+		pos[]={5775.6582,52.206215,6060.0547};
+		dir[]={-0.8117907,-0.49653763,-0.30746308};
+		up[]={-0.46438229,0.86798877,-0.17588399};
+		aside[]={-0.35420802,9.7416341e-007,0.93520665};
 	};
 };
 binarizationWanted=0;
@@ -30,13 +30,17 @@ addons[]=
 	"A3_Ui_F",
 	"rds_a2port_cman",
 	"rhs_c_troops",
-	"A3_Characters_F_Exp_Civil"
+	"A3_Characters_F_Exp_Civil",
+	"CUP_CAStructures_E_HouseC",
+	"CUP_Buildings_Config",
+	"fallujah_hou",
+	"A3_Structures_F_Households_WIP"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=10;
 		class Item0
 		{
 			className="rds_A2_Civilians";
@@ -75,6 +79,28 @@ class AddonsMetaData
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="CUP_CAStructures_E_HouseC";
+			name="CUP_CAStructures_E_HouseC";
+		};
+		class Item7
+		{
+			className="CUP_Buildings_Config";
+			name="CUP_Buildings_Config";
+		};
+		class Item8
+		{
+			className="fallujah_hou";
+			name="fallujah_hou";
+		};
+		class Item9
+		{
+			className="A3_Structures_F_Households";
+			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -124,7 +150,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=27;
 		class Item0
 		{
 			dataType="Object";
@@ -548,6 +574,257 @@ class Mission
 				};
 			};
 			id=3494;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5727.3379,10.69721,6176.7495};
+				angles[]={0,6.1370082,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3512;
+			type="Land_House_C_12_EP1";
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5711.9238,8.89291,6200.4077};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3513;
+			type="Land_Dum_istan3_pumpa";
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5709.2148,9.3012505,6173.0288};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3514;
+			type="Land_Dum_istan2";
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5711.3896,8.7979355,6193.0366};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3515;
+			type="Land_House_C_5_V1_EP1";
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5727.9365,11.059988,6054.1719};
+				angles[]={0,4.5485082,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3518;
+			type="Land_House_C_4_EP1";
+			atlOffset=4.7683716e-007;
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5740.0039,9.4835348,6189.2993};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3528;
+			type="Land_Unfinished_Building_01_F";
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5730.856,9.5,6138.6929};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3549;
+			type="Land_Dum_olez_istan2_maly2";
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5727.8662,9.5,6150.7764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3550;
+			type="Land_Dum_olez_istan2_maly";
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5713.3774,8.8504429,6244.6685};
+				angles[]={0,3.0199039,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3551;
+			type="Land_Dum_olez_istan1_open2";
+			atlOffset=-4.7683716e-007;
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5741.7524,7.998105,6058.4575};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3553;
+			type="Land_Dum_olez_istan2";
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5713.8071,12.46673,6004.9668};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3554;
+			type="Land_shez_palm_01";
+			atlOffset=-0.00022888184;
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5715.5933,14.56636,6026.9707};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3560;
+			type="Land_shez_palm_10";
+			atlOffset=-0.00013256073;
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5710.043,13.213747,6026.9546};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3561;
+			type="Land_shez_palm_04";
+			atlOffset=-1.0967255e-005;
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5708.8389,13.733589,6028.2188};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3562;
+			type="Land_shez_palm_03";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5710.7622,13.714945,6026.6592};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3563;
+			type="Land_shez_palm_02";
+			atlOffset=-0.0002822876;
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5720.1396,12.466829,6016.2842};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3564;
+			type="Land_shez_palm_01";
+			atlOffset=-0.00012969971;
 		};
 	};
 };

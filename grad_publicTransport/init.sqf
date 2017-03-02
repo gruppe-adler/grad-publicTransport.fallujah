@@ -16,7 +16,10 @@ if (hasInterface) then {
 
 if (isServer) then {
 	[] execVM "grad_publicTransport\functions\taxi\init.sqf";
-	call grad_publicTransport_fnc_removeDangerousPlants;
+	
+	call grad_publicTransport_fnc_replaceBuildings;
+	call grad_publicTransport_fnc_replaceTrees;
+	call grad_publicTransport_fnc_removeObjectsFromRoads;
 };
 
 

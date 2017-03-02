@@ -74,6 +74,8 @@ class GRAD_publicTransport {
 
         class dressDriver {};
         class createDebugMarker {};
-        class removeDangerousPlants {};
+        class replaceBuildings {};
+        class replaceTrees {};
+        class removeObjectsFromRoads;
     };
 };

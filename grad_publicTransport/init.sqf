@@ -14,13 +14,59 @@ if (hasInterface) then {
 	call grad_publicTransport_fnc_addACEInteraction;
 };
 
-if (isServer) then {
-	[] execVM "grad_publicTransport\functions\taxi\init.sqf";
-	
-	call grad_publicTransport_fnc_replaceBuildings;
-	call grad_publicTransport_fnc_replaceTrees;
-	call grad_publicTransport_fnc_removeObjectsFromRoads;
-};
+
+
+[] execVM "grad_publicTransport\functions\taxi\init.sqf";
+
+/*
+call grad_publicTransport_fnc_replaceBuildings;
+[
+["palm_01.p3d",
+"palm_02.p3d",
+"palm_03.p3d",
+"palm_04.p3d",
+"palm_05.p3d",
+"palm_10.p3d"]
+,
+["CUP_palm_01",
+"CUP_palm_09",
+"CUP_palm_03",
+"CUP_palm_04",
+"CUP_palm_05",
+"CUP_palm_10"],
+false
+] call grad_publicTransport_fnc_replaceSingleTreeType; */
+
+/*
+_timeCountBuildings = call grad_publicTransport_fnc_replaceBuildings;
+
+
+_timeCountTrees = [
+["palm_01.p3d",
+"palm_02.p3d",
+"palm_03.p3d",
+"palm_04.p3d",
+"palm_05.p3d",
+"palm_10.p3d"]
+,
+["a3\vegetation_f_exp\tree\t_CocosNucifera3s_tall_F.p3d",
+"a3\vegetation_f_exp\tree\t_Cyathea_F.p3d",
+"a3\vegetation_f_exp\tree\t_Cocos_tall_F.p3d",
+"a3\vegetation_f_exp\tree\t_CocosNucifera2s_small_F.p3d",
+"a3\vegetation_f_exp\tree\t_Cocos_small_F.p3d",
+"a3\vegetation_f_exp\tree\t_CocosNucifera3s_tall_F.p3d"],
+true
+] call grad_publicTransport_fnc_replaceSingleTreeType;
+*/
+
+/*
+_timeCountClutter = call grad_publicTransport_fnc_removeObjectsFromRoads;
+*/
+
+
+
+
+
 
 
 

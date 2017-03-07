@@ -72,10 +72,17 @@ class GRAD_publicTransport {
     class common {
         file = grad_publicTransport\functions\common;
 
-        class dressDriver {};
         class createDebugMarker {};
-        class replaceBuildings {};
-        class replaceTrees {};
-        class removeObjectsFromRoads;
+        class dressDriver {};
+        class hideObject {};
+        class replaceBuildings {
+            preInit = 1;
+        };
+        class replaceSingleTreeType {
+            preInit = 1;
+        };
+        class removeObjectsFromRoads {
+            preInit = 1;
+        };
     };
 };

@@ -1,0 +1,9 @@
+{
+  "name": "grad-publicTransport",
+  "description": "Arma3 Taxi and Bus System",
+  "version": "0.0.1",
+  "dependencies": {
+    "grad-moneymenu": "^0.1.2",
+    "shk_pos": "gruppe-adler/shk_pos#master"
+  }
+}

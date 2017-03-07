@@ -3,6 +3,7 @@ enableDebugConsole = 1;
 class cfgFunctions {
 	#include "grad_publicTransport\cfgFunctions.hpp"
 	#include "grad_civstatic\cfgFunctions.hpp"
+	#include "modules\grad-moneymenu\cfgFunctions.hpp"
 };
 
 #include "grad_publicTransport\ui\defines.hpp"
@@ -10,4 +11,20 @@ class cfgFunctions {
 
 class RscTitles {
 	#include "grad_publicTransport\ui\taxameterDisplay.hpp"
+};
+
+
+
+// money system by mcdiod
+#include "modules\grad-moneymenu\grad_moneymenu.hpp"
+
+class CfgGradMoneymenu {
+    canGiveDefault = 1;                                                    
+    canTransferToSidesDefault[] = {};
+    canTakeFromDeadDefault = 1;        
+    canSendDirectlyDefault = 0;                                    
+    canTakeFromSurrenderedDefault = 1;                                     
+    startMoney = 0;                                                        
+    startBankBalance = 0;                                                  
+    atmObjects[] = {"Land_Atm_01_F"};                                      
 };

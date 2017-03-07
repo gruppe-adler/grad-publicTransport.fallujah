@@ -3,8 +3,7 @@ params ["_position"];
 _driverGroup = group driver vehicle player;
 
 _wp = _driverGroup addWaypoint [_position, 0];
-
-_driverGroup setSpeedMode "FULL";
+_driverGroup setSpeedMode "NORMAL";
 
 call grad_publicTransport_fnc_taxiDialogClose;
 

@@ -42,10 +42,19 @@ while {TAXAMETER_ON} do {
 		];
 
 	sleep 1;
+
+	if (TAXAMETER_PRICE >= player getVariable ["grad_lbm_myFunds", 0]) then {
+		call GRAD_publicTransport_fnc_stopTaxameter;
+		
+		vehicle player vehicleChat format ['Du hast keine Kohle mehr, Lump!'];
+		player action ["GetOut", vehicle player];
+	};
 };
 
 _taxameterCtrl ctrlSetFade 0;
-_taxameterCtrl ctrlCommit 3;
+_taxameterCtrl ctrlCommit 1;
 
-sleep 3;
+sleep 1;
 cutText ["", "PLAIN"];
+
+[player, TAXAMETER_PRICE] call grad_moneymenu_fnc_removeFunds;
